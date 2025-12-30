@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+html {
+  font-family: Montserrat, Helvetica;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-VariableFont_wght.ttf")
+}
+
+@font-face {
+  font-style: italic;
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Italic-VariableFont_wght.ttf")
+}
+
