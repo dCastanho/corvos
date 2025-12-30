@@ -25,7 +25,7 @@ const openBurger = ref(false)
 
 
 <template>
-	<div class="text-white w-screen h-16 noise gap-x-8 lg:gap-x-12 bg-zinc-900/95 flex flex-row justify-start items-center px-12  outline-black outline">
+	<div id="navbar"  class="text-white w-screen h-16 noise gap-x-8 lg:gap-x-12 flex flex-row justify-start items-center px-12">
       <a class="h-8 flex-1" href="/">
         <img class="h-full scale-100 transition-all hover:scale-110 " src="/images/LogoCorvos_2.png">
       </a>
@@ -38,7 +38,12 @@ const openBurger = ref(false)
         <button>
           <CORBurger class="size-8"/>
         </button>
-        <
       </div>
     </div>
 </template>
+
+<style>
+#navbar:has(+#content) {
+  background-color: rgb(34, 34, 34);
+}
+</style>
