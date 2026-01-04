@@ -9,11 +9,13 @@ const props = defineProps({
 const route = useRoute()
 const isSelected = computed( () =>  route.path.match('^' + props.href + '.*' ) != null )
 
+const emit = defineEmits(['selected'])
+
 </script>
 
 <template>
 	<a 
-		:class=" isSelected ? 'font-bold' : '' "
+		:class=" isSelected ? 'font-bold' : '' " @click="emit('selected')"
 		class="group text-lg" :href="props.href" >
 		<slot></slot>
 		<hr 

@@ -15,19 +15,25 @@ const isSelected = computed( () =>  route.path.match(props.base + '.*' ) != null
 
 watch(route, () => open.value = false)
 
+const emit = defineEmits(['selected'])
+
 </script>
 
 <template>
-	<div class="relative">
-	<button 
-	:class="isSelected ? 'font-bold' : ''"
-	class="peer cursor-pointer text-lg flex gap-x-1 items-center" >
+	<div>
+
+		<button 
+		@click="open = !open"
+		:class="isSelected ? 'font-bold' : ''"
+		class="peer cursor-pointer text-lg flex gap-x-1 items-center" >
 		<slot></slot> <CORChevDown class="size-4"></CORChevDown>
 	</button>
-	<div class="hover:flex ring ring-gray-600 hidden opacity-0 hover:opacity-100 peer-hover:opacity-100 peer-hover:flex  px-4 p-2 rounded-sm flex-col left-1/2 -translate-x-1/2 duration-500 transition-all absolute  bg-zinc-900/90">
-		<a v-for="l of links" :href="props.base + l.href">
-			{{ l.label }} 
-		</a>
-		</div>
-	</div>
+	<div class="transition-all flex flex-col pl-5 border-l border-gray-50 overflow-hidden"
+	:class="open ? 'h-fit' : 'h-0' ">
+	<a v-for="l of links" :href="props.base + l.href"
+	@click="emit('selected')">
+		{{ l.label }} 
+	</a>
+</div>
+</div>
 </template>
