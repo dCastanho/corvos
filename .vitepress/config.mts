@@ -5,7 +5,8 @@ import tailwindcss from '@tailwindcss/vite'
 // ite-config
 export default defineConfig({
   title: "Batalha dos Corvos ",
-  description: "A VitePress Site",
+  description: "Corvos",
+  base: "/corvos/",
   vite: {
     plugins: [tailwindcss()]
   }
