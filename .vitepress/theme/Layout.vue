@@ -20,8 +20,8 @@ const { frontmatter } = useData()
           <h1 class="text-3xl md:text-4xl font-semibold text-white"> Batalha dos Corvos </h1>
           <span class="text-white text-center md:text-left text-xl font-light">The largest miniature game event in Portugal</span>
           <div class="flex justify-around gap-x-4">
-          <a href="/about/info" class="hover:bg-black/60 hover:text-white hover:border-white px-4 py-2 border border-white bg-white  rounded-lg "> Learn More </a>
-          <a href="/about/batalhas/" class="hover:opacity-60 px-4 py-2 border border-white rounded-lg text-white"> Past Battles </a>
+          <a href="/corvos/about/info" class="hover:bg-black/60 hover:text-white hover:border-white px-4 py-2 border border-white bg-white  rounded-lg "> Learn More </a>
+          <a href="/corvos/about/batalhas/" class="hover:opacity-60 px-4 py-2 border border-white rounded-lg text-white"> Past Battles </a>
           </div>
         </div>
       </div>

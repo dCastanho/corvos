@@ -28,9 +28,9 @@ const openBurger = ref(false)
         :class="openBurger ? 'translate-y-0' : '-translate-y-full' "
         >
         <div class="flex-col flex items-start gap-y-2">
-          <CORBaseLink @selected="openBurger=false" href="/registration"> Registration </CORBaseLink>      
-          <CORLinkGroupSM @selected="openBurger=false"  base="/event" :links="eventLinks"> Event </CORLinkGroupSM>
-          <CORLinkGroupSM @selected="openBurger=false" base="/about" :links="aboutLinks"> About </CORLinkGroupSM>  
+          <CORBaseLink @selected="openBurger=false" href="/corvos/registration"> Registration </CORBaseLink>      
+          <CORLinkGroupSM @selected="openBurger=false"  base="/corvos/event" :links="eventLinks"> Event </CORLinkGroupSM>
+          <CORLinkGroupSM @selected="openBurger=false" base="/corvos/about" :links="aboutLinks"> About </CORLinkGroupSM>  
         </div>
 
 
@@ -40,9 +40,9 @@ const openBurger = ref(false)
         <img class="h-full scale-100 transition-all hover:scale-110 " src="/images/LogoCorvos_2.png">
       </a>
       <div class="hidden md:flex gap-x-6">
-        <CORBaseLink href="/registration"> Registration </CORBaseLink>
-        <CORLinkGroup base="/event" :links="eventLinks"> Event </CORLinkGroup>
-        <CORLinkGroup base="/about" :links="aboutLinks"> About </CORLinkGroup>  
+        <CORBaseLink href="/corvos/registration"> Registration </CORBaseLink>
+        <CORLinkGroup base="/corvos/event" :links="eventLinks"> Event </CORLinkGroup>
+        <CORLinkGroup base="/corvos/about" :links="aboutLinks"> About </CORLinkGroup>  
       </div>
       <div class="block md:hidden">
         <button @click="openBurger = !openBurger">
