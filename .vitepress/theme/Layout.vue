@@ -14,6 +14,7 @@ const { frontmatter } = useData()
 <template>
   <div class="relative">
     <CORNav></CORNav>
+    <CORBanner></CORBanner>
     <div class="w-screen h-screen" id="home" v-if="frontmatter.home">
       <div class="flex flex-col md:justify-center md:items-start  justify-end pb-18 items-center z-30 bg-radial from-black/30 to-black/40 absolute top-0 left-0 h-full w-full">
         <div class="md:pl-20 flex flex-col items-center md:items-start justify-center w-fit gap-y-4 px-6">
