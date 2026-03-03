@@ -17,8 +17,9 @@ backend:
 
 # Better Decap + Bridge logo (optional)
 media_folder: /public/
-media_library: /public/images/
-collection:
+media_library:
+  name: empty
+collections:
 - name: 'teste'
   label: 'Teste'
   folder: '/event/'
