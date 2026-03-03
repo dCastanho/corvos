@@ -43,9 +43,9 @@ collections:
   label: 'Batalhas'
   folder: '/about/batalhas/'
   create: true
-  slug: '{{year}}'
+  slug: '{{title}}'
   fields:
-  - {label: "Ano", name: "year", widget: "number"}
+  - {label: "Ano", name: "title", widget: "number"}
   - {label: "Participantes", name: "participants", widget: "number"}
   - {label: "Local", name: "local", widget: "string"}
 - name: 'battles_index'

@@ -8,9 +8,9 @@ console.log(battles)
 
 <template>
 	<div>
-		<div v-for="(b, index) in battles" :key="b.frontmatter.year">
+		<div v-for="(b, index) in battles" :key="b.frontmatter.title">
 			<CORBattleEntry 
-				:year="b.frontmatter.year"
+				:year="b.frontmatter.title"
 				:local="b.frontmatter.local"
 				:participants="b.frontmatter.participants" 
 				:last="index == battles.length-1" >
