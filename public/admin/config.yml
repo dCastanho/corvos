@@ -16,6 +16,17 @@ backend:
     openAuthoring: Message {{message}} - {{author-name}} <{{author-login}}> via DecapBridge
 
 # Better Decap + Bridge logo (optional)
+media_folder: /public/
+media_library: /public/images/
+collection:
+- name: 'teste'
+  label: 'Teste'
+  folder: '/event/'
+  create: true
+  slug: '{{slug}}'
+  editor:
+    preview: true
+  fields: []
 logo_url: https://decapbridge.com/decapcms-with-bridge.svg
 
 # Add site links in Decap CMS (optional)
