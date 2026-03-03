@@ -19,17 +19,16 @@ backend:
 media_folder: /public/
 
 collections:
-- name: 'teste'
-  label: 'Teste'
+- name: 'evento'
+  label: 'Dados do Evento'
   folder: '/event/'
   create: true
   slug: '{{slug}}'
   editor:
     preview: true
-  fields: 
-  - name: cover
-    label: Cover Image
-    widget: image
+  fields:
+  - {label: "Titulo", name: "title", widget: "string"}
+  - {label: "Corpo", name: "body", widget: "markdown"}
 
 logo_url: https://decapbridge.com/decapcms-with-bridge.svg
 
