@@ -1,3 +1,6 @@
+---
+title: Registo
+---
 
 ## Registration
 

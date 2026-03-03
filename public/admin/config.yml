@@ -20,8 +20,39 @@ media_folder: /public/
 
 collections:
 - name: 'evento'
-  label: 'Dados do Evento'
+  label: 'Evento'
   folder: '/event/'
+  create: true
+  slug: '{{slug}}'
+  editor:
+    preview: true
+  fields:
+  - {label: "Titulo", name: "title", widget: "string"}
+  - {label: "Corpo", name: "body", widget: "markdown"}
+- name: 'about'
+  label: 'Sobre'
+  folder: '/about/'
+  create: true
+  slug: '{{slug}}'
+  editor:
+    preview: true
+  fields:
+  - {label: "Titulo", name: "title", widget: "string"}
+  - {label: "Corpo", name: "body", widget: "markdown"}
+- name: 'battles'
+  label: 'Batalhas'
+  folder: '/about/batalhas/'
+  create: true
+  slug: '{{slug}}'
+  editor:
+    preview: true
+  fields:
+  - {label: "Ano", name: "year", widget: "number"}
+  - {label: "Participantes", name: "participants", widget: "number"}
+  - {label: "Local", name: "local", widget: "string"}
+- name: 'inicio'
+  label: 'Batalhas'
+  folder: '/'
   create: true
   slug: '{{slug}}'
   editor:
