@@ -19,6 +19,7 @@ backend:
 media_folder: /public/
 media_library:
   name: empty
+  
 collections:
 - name: 'teste'
   label: 'Teste'
@@ -27,7 +28,11 @@ collections:
   slug: '{{slug}}'
   editor:
     preview: true
-  fields: []
+  fields: 
+  - name: cover
+    label: Cover Image
+    widget: image
+
 logo_url: https://decapbridge.com/decapcms-with-bridge.svg
 
 # Add site links in Decap CMS (optional)
