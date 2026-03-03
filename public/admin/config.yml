@@ -43,7 +43,7 @@ collections:
   label: 'Batalhas'
   folder: '/about/batalhas/'
   create: true
-  slug: '{{year}} - {{local}}'
+  slug: '{{year}}'
   fields:
   - {label: "Ano", name: "year", widget: "number"}
   - {label: "Participantes", name: "participants", widget: "number"}
@@ -52,6 +52,9 @@ collections:
   label: 'Lista de Batalhas'
   folder: '/about/batalhas/'
   slug: '{{slug}}'
+  filter:
+    field: title
+    value: Lista
   fields:
   - {label: "Titulo", name: "title", widget: "string"}
   - {label: "Corpo", name: "body", widget: "markdown"}
