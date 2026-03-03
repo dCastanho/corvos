@@ -5,7 +5,8 @@ import CORLinkGroup from './components/CORLinkGroup.vue';
 import CORNav from './components/CORNav.vue';
 import CORBanner from './components/CORBanner.vue';
 import CORBattleListing from './components/CORBattleListing.vue';
-CORBattleListing
+
+
 
 // https://vitepress.dev/reference/runtime-api#usedata
 const { frontmatter } = useData()
