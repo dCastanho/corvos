@@ -2,7 +2,7 @@
 backend:
   name: git-gateway
   repo: dCastanho/corvos
-  branch: main
+  branch: master
   identity_url: https://auth.decapbridge.com/sites/400eaace-5a20-4e46-bfe7-a6492ee1f281
   gateway_url: https://gateway.decapbridge.com
 
