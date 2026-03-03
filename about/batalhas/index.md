@@ -1,5 +1,6 @@
 ---
 battle_listing: true
+title: "Lista"
 ---
 
 ## Past Battles

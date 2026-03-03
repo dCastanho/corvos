@@ -43,20 +43,23 @@ collections:
   label: 'Batalhas'
   folder: '/about/batalhas/'
   create: true
-  slug: '{{slug}}'
-  editor:
-    preview: true
+  slug: '{{year}} - {{local}}'
   fields:
   - {label: "Ano", name: "year", widget: "number"}
   - {label: "Participantes", name: "participants", widget: "number"}
   - {label: "Local", name: "local", widget: "string"}
+- name: 'battles_index'
+  label: 'Lista de Batalhas'
+  folder: '/about/batalhas/'
+  slug: '{{slug}}'
+  fields:
+  - {label: "Titulo", name: "title", widget: "string"}
+  - {label: "Corpo", name: "body", widget: "markdown"}
 - name: 'inicio'
-  label: 'Batalhas'
+  label: 'Inicio'
   folder: '/'
   create: true
   slug: '{{slug}}'
-  editor:
-    preview: true
   fields:
   - {label: "Titulo", name: "title", widget: "string"}
   - {label: "Corpo", name: "body", widget: "markdown"}
